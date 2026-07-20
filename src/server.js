@@ -59,7 +59,7 @@ app.use(
 // Global Rate Limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
+  max: process.env.NODE_ENV === 'production' ? 100 : 10000, // limit each IP to 100 in production, 10000 in development
   message: 'Too many requests from this IP, please try again in 15 minutes.',
 });
 app.use('/api', limiter);
@@ -111,6 +111,39 @@ app.use(notFound);
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
+
+server.on('error', (e) => {
+  if (e.code === 'EADDRINUSE') {
+    console.warn(`⚠️ Port ${PORT} is busy. Retrying in 1 second...`);
+    setTimeout(() => {
+      try {
+        server.close();
+      } catch (err) {}
+      server.listen(PORT);
+    }, 1000);
+  }
+});
+
 server.listen(PORT, () => {
   console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
 });
+
+// Graceful shutdown handlers to release port 5000 immediately on nodemon reload
+const shutdown = () => {
+  console.log('Stopping server and releasing port...');
+  io.close();
+  server.close(() => {
+    console.log('Server stopped.');
+    process.exit(0);
+  });
+};
+
+process.once('SIGUSR2', () => {
+  io.close();
+  server.close(() => {
+    process.kill(process.pid, 'SIGUSR2');
+  });
+});
+
+process.on('SIGINT', shutdown);
+process.on('SIGTERM', shutdown);

@@ -16,7 +16,7 @@ const getChromaClient = () => {
 
   const apiKey = process.env.CHROMADB_API_KEY || process.env.CHROMA_API_KEY;
   if (!apiKey || apiKey.startsWith('your_')) {
-    console.warn('⚠️ ChromaDB API key is missing. AI semantic search features will fallback to database regex search.');
+    console.warn('⚠️ ChromaDB API key is missingme. AI semantic search features will fallback to database regex search.');
     return null;
   }
 

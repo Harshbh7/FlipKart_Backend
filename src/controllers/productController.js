@@ -26,7 +26,7 @@ export const getProducts = async (req, res, next) => {
         const keywords = searchStr
           .split(/\s+/)
           .map(w => w.replace(/[^a-zA-Z0-9]/g, '').trim())
-          .filter(w => w.length > 2); // Ignore very short words like 'a', 'in', 'of', 'on', etc.
+          .filter(w => w.length >= 2); // Ignore single character words like 'a', 'i', 's'
 
         keywords.forEach(keyword => {
           const regexPattern = `\\b${keyword}\\b`;
@@ -41,14 +41,13 @@ export const getProducts = async (req, res, next) => {
         // Match synonyms to category
         const categorySynonyms = {
           'Fashion': ['fashion', 'clothes', 'clothing', 'apparel', 'wear', 'garment', 'dress', 'shirt', 'jeans', 'tshirt', 't-shirt', 'shoe', 'shoes', 'sneaker', 'sneakers'],
-          'Mobiles': ['mobile', 'mobiles', 'phone', 'phones', 'smartphone', 'smartphones', 'cellphone', 'cellphones', 'iphone', 'iphones'],
+          'Mobiles': ['mobile', 'mobiles', 'phone', 'phones', 'smartphone', 'smartphones', 'cellphone', 'cellphones'],
           'Electronics': ['electronics', 'electronic', 'laptop', 'laptops', 'computer', 'computers', 'earphone', 'earphones', 'headphone', 'headphones', 'headset', 'headsets', 'soundbar', 'soundbars', 'speaker', 'speakers', 'tv', 'tvs', 'television', 'televisions'],
           'Home': ['home', 'furniture', 'kettle', 'kettles', 'decor', 'bedsheet', 'bedsheets', 'kitchen']
         };
 
         Object.entries(categorySynonyms).forEach(([cat, synonyms]) => {
           const matchesSynonym = synonyms.some(syn => 
-            lowerSearch.includes(syn) || 
             lowerSearch.split(/\s+/).some(word => word.replace(/[^a-zA-Z0-9]/g, '') === syn)
           );
           if (matchesSynonym) {
@@ -163,11 +162,71 @@ export const getProducts = async (req, res, next) => {
     const limitCount = Number(limit);
     const skipCount = (currentPage - 1) * limitCount;
 
-    const totalProducts = await Product.countDocuments(query);
-    const products = await Product.find(query)
-      .sort(sortOptions)
-      .skip(skipCount)
-      .limit(limitCount);
+    let products = [];
+    let totalProducts = 0;
+
+    if (search) {
+      // Fetch all matching products to apply advanced relevance sorting in memory
+      let allProducts = await Product.find(query);
+      
+      const lowerSearchStr = search.toLowerCase();
+      const searchKeywords = lowerSearchStr
+        .split(/\s+/)
+        .map(w => w.replace(/[^a-zA-Z0-9]/g, '').trim())
+        .filter(w => w.length >= 2);
+
+      allProducts = allProducts.map(p => {
+        let score = 0;
+        const name = p.name.toLowerCase();
+        const brand = (p.brand || '').toLowerCase();
+        const desc = (p.description || '').toLowerCase();
+
+        // 1. Full search phrase matching
+        if (name.includes(lowerSearchStr)) {
+          score += 150;
+        } else if (desc.includes(lowerSearchStr)) {
+          score += 50;
+        }
+
+        // 2. Keyword level matching
+        searchKeywords.forEach(keyword => {
+          const regex = new RegExp(`\\b${keyword}\\b`, 'i');
+          if (regex.test(p.name)) {
+            score += 30;
+          } else if (p.name.toLowerCase().includes(keyword)) {
+            score += 10;
+          }
+          
+          if (p.brand && regex.test(p.brand)) {
+            score += 15;
+          }
+          if (p.description && regex.test(p.description)) {
+            score += 5;
+          }
+        });
+
+        return { product: p, score };
+      });
+
+      // Sort by relevance score, with fallback to default sorting
+      allProducts.sort((a, b) => {
+        if (b.score !== a.score) {
+          return b.score - a.score;
+        }
+        // Fallback to newest first
+        return b.product.createdAt - a.product.createdAt;
+      });
+
+      products = allProducts.map(item => item.product);
+      totalProducts = products.length;
+      products = products.slice(skipCount, skipCount + limitCount);
+    } else {
+      totalProducts = await Product.countDocuments(query);
+      products = await Product.find(query)
+        .sort(sortOptions)
+        .skip(skipCount)
+        .limit(limitCount);
+    }
 
     // Compute unique brands matching the current query filters (excluding brand filter itself)
     const brandQuery = { ...query };

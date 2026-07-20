@@ -2304,6 +2304,732 @@ const productsData = [
     imageUrl: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=800"
   },
 
+  // ==============================
+  // 🍎 APPLE iPHONE COLLECTION
+  // ==============================
+
+  {
+    name: "Apple iPhone (2007)",
+    description: "The first generation iPhone with a 3.5-inch display and revolutionary multi-touch experience.",
+    price: 8999,
+    originalPrice: 11999,
+    discount: 25,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 8,
+    ratings: 4.3,
+    numOfReviews: 210,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 3G",
+    description: "Introduced 3G connectivity and App Store support.",
+    price: 9999,
+    originalPrice: 12999,
+    discount: 23,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 10,
+    ratings: 4.4,
+    numOfReviews: 260,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 3GS",
+    description: "Faster performance with improved camera and voice control.",
+    price: 10999,
+    originalPrice: 13999,
+    discount: 21,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 10,
+    ratings: 4.4,
+    numOfReviews: 310,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 4",
+    description: "Retina Display with premium glass design.",
+    price: 12999,
+    originalPrice: 15999,
+    discount: 19,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 12,
+    ratings: 4.5,
+    numOfReviews: 540,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 4s",
+    description: "Powered by A5 chip and introduced Siri.",
+    price: 13999,
+    originalPrice: 16999,
+    discount: 18,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 15,
+    ratings: 4.5,
+    numOfReviews: 690,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 5",
+    description: "4-inch Retina Display with Lightning connector.",
+    price: 14999,
+    originalPrice: 17999,
+    discount: 17,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 18,
+    ratings: 4.5,
+    numOfReviews: 920,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 5c",
+    description: "Colorful polycarbonate design with A6 chip.",
+    price: 13999,
+    originalPrice: 16999,
+    discount: 18,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 20,
+    ratings: 4.4,
+    numOfReviews: 820,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 5s",
+    description: "First iPhone with Touch ID fingerprint sensor.",
+    price: 15999,
+    originalPrice: 19999,
+    discount: 20,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 22,
+    ratings: 4.6,
+    numOfReviews: 1800,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 6",
+    description: "4.7-inch Retina HD display with A8 chip.",
+    price: 17999,
+    originalPrice: 21999,
+    discount: 18,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 30,
+    ratings: 4.6,
+    numOfReviews: 2500,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 6 Plus",
+    description: "5.5-inch Retina HD display with Optical Image Stabilization.",
+    price: 19999,
+    originalPrice: 23999,
+    discount: 17,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 25,
+    ratings: 4.6,
+    numOfReviews: 2300,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 6s",
+    description: "3D Touch technology with A9 chip.",
+    price: 22999,
+    originalPrice: 26999,
+    discount: 15,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 30,
+    ratings: 4.7,
+    numOfReviews: 3500,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 6s Plus",
+    description: "Large display with 3D Touch and 12MP camera.",
+    price: 24999,
+    originalPrice: 29999,
+    discount: 17,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 25,
+    ratings: 4.7,
+    numOfReviews: 3200,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone SE (1st Gen)",
+    description: "Compact 4-inch iPhone with A9 chip.",
+    price: 19999,
+    originalPrice: 24999,
+    discount: 20,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 25,
+    ratings: 4.7,
+    numOfReviews: 2800,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 7",
+    description: "Water resistant design with A10 Fusion chip.",
+    price: 26999,
+    originalPrice: 31999,
+    discount: 16,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.7,
+    numOfReviews: 5600,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 7 Plus",
+    description: "Dual-camera system with Portrait Mode.",
+    price: 29999,
+    originalPrice: 34999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 32,
+    ratings: 4.8,
+    numOfReviews: 6400,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 8",
+    description: "Glass back with wireless charging support.",
+    price: 32999,
+    originalPrice: 37999,
+    discount: 13,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.8,
+    numOfReviews: 7200,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 8 Plus",
+    description: "5.5-inch Retina HD display with A11 Bionic chip.",
+    price: 35999,
+    originalPrice: 41999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 30,
+    ratings: 4.8,
+    numOfReviews: 7600,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone X",
+    description: "Bezel-less OLED display with Face ID.",
+    price: 39999,
+    originalPrice: 45999,
+    discount: 13,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.8,
+    numOfReviews: 9200,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone XR",
+    description: "Liquid Retina display powered by A12 Bionic chip.",
+    price: 42999,
+    originalPrice: 49999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 45,
+    ratings: 4.8,
+    numOfReviews: 12500,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone XS",
+    description: "Super Retina OLED display with dual cameras.",
+    price: 48999,
+    originalPrice: 55999,
+    discount: 13,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 40,
+    ratings: 4.8,
+    numOfReviews: 8900,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone XS Max",
+    description: "6.5-inch Super Retina display with A12 Bionic.",
+    price: 53999,
+    originalPrice: 60999,
+    discount: 11,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.9,
+    numOfReviews: 9800,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+  // ==============================
+  // 🍎 APPLE iPHONE COLLECTION
+  // PART - 2
+  // ==============================
+
+  {
+    name: "Apple iPhone 11",
+    description: "Dual 12MP camera system with Night Mode and A13 Bionic chip.",
+    price: 44999,
+    originalPrice: 52999,
+    discount: 15,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 60,
+    ratings: 4.8,
+    numOfReviews: 24500,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 11 Pro",
+    description: "Triple-camera system with Super Retina XDR OLED display.",
+    price: 59999,
+    originalPrice: 69999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.9,
+    numOfReviews: 18400,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 11 Pro Max",
+    description: "6.5-inch Super Retina XDR display with A13 Bionic.",
+    price: 67999,
+    originalPrice: 77999,
+    discount: 13,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 30,
+    ratings: 4.9,
+    numOfReviews: 17600,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone SE (2nd Gen)",
+    description: "Compact iPhone powered by the A13 Bionic chip.",
+    price: 29999,
+    originalPrice: 34999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 45,
+    ratings: 4.7,
+    numOfReviews: 8200,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 12 Mini",
+    description: "Compact 5.4-inch Super Retina XDR display with A14 Bionic.",
+    price: 42999,
+    originalPrice: 49999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 40,
+    ratings: 4.8,
+    numOfReviews: 9300,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 12",
+    description: "6.1-inch OLED display with A14 Bionic chip and MagSafe.",
+    price: 49999,
+    originalPrice: 57999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 65,
+    ratings: 4.8,
+    numOfReviews: 26800,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 12 Pro",
+    description: "Triple-camera system with LiDAR Scanner.",
+    price: 68999,
+    originalPrice: 79999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.9,
+    numOfReviews: 12400,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 12 Pro Max",
+    description: "Largest display with advanced Pro camera system.",
+    price: 76999,
+    originalPrice: 89999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 30,
+    ratings: 4.9,
+    numOfReviews: 11900,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 13 Mini",
+    description: "Compact flagship with A15 Bionic chip.",
+    price: 52999,
+    originalPrice: 59999,
+    discount: 12,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 30,
+    ratings: 4.8,
+    numOfReviews: 7800,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 13",
+    description: "Advanced dual-camera system with A15 Bionic.",
+    price: 59999,
+    originalPrice: 69999,
+    discount: 14,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 70,
+    ratings: 4.9,
+    numOfReviews: 32400,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 13 Pro",
+    description: "ProMotion 120Hz display with Pro camera system.",
+    price: 78999,
+    originalPrice: 89999,
+    discount: 12,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.9,
+    numOfReviews: 15300,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 13 Pro Max",
+    description: "Flagship iPhone with A15 Bionic and ProMotion display.",
+    price: 87999,
+    originalPrice: 99999,
+    discount: 12,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 30,
+    ratings: 4.9,
+    numOfReviews: 14800,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone SE (3rd Gen)",
+    description: "A15 Bionic powered compact iPhone with 5G support.",
+    price: 42999,
+    originalPrice: 47999,
+    discount: 10,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 40,
+    ratings: 4.7,
+    numOfReviews: 6200,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 14",
+    description: "A15 Bionic chip with Emergency SOS via satellite.",
+    price: 69999,
+    originalPrice: 79999,
+    discount: 13,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 65,
+    ratings: 4.9,
+    numOfReviews: 21300,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 14 Plus",
+    description: "Large 6.7-inch display with excellent battery life.",
+    price: 79999,
+    originalPrice: 89999,
+    discount: 11,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 45,
+    ratings: 4.8,
+    numOfReviews: 9300,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 14 Pro",
+    description: "Dynamic Island with A16 Bionic and Always-On Display.",
+    price: 99999,
+    originalPrice: 109999,
+    discount: 9,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.9,
+    numOfReviews: 13500,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 14 Pro Max",
+    description: "Premium flagship with Dynamic Island and 48MP camera.",
+    price: 114999,
+    originalPrice: 124999,
+    discount: 8,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 30,
+    ratings: 4.9,
+    numOfReviews: 14700,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+  // ==============================
+  // 🍎 APPLE iPHONE COLLECTION
+  // PART - 3 (Latest Models)
+  // ==============================
+
+  {
+    name: "Apple iPhone 15",
+    description: "A16 Bionic chip, Dynamic Island, USB-C, and 48MP main camera.",
+    price: 69900,
+    originalPrice: 79900,
+    discount: 13,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 80,
+    ratings: 4.8,
+    numOfReviews: 28600,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 15 Plus",
+    description: "6.7-inch Super Retina XDR display with A16 Bionic chip.",
+    price: 79900,
+    originalPrice: 89900,
+    discount: 11,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 60,
+    ratings: 4.8,
+    numOfReviews: 14250,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 15 Pro",
+    description: "Titanium design with A17 Pro chip and Pro camera system.",
+    price: 119900,
+    originalPrice: 129900,
+    discount: 8,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 40,
+    ratings: 4.9,
+    numOfReviews: 18600,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 15 Pro Max",
+    description: "Flagship titanium iPhone with A17 Pro and 5x Telephoto camera.",
+    price: 144900,
+    originalPrice: 159900,
+    discount: 9,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 35,
+    ratings: 4.9,
+    numOfReviews: 21200,
+    imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+  },
+
+  {
+    name: "Apple iPhone 16e",
+    description: "Affordable iPhone powered by A18 chip with Apple Intelligence support.",
+    price: 59900,
+    originalPrice: 64900,
+    discount: 8,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 70,
+    ratings: 4.8,
+    numOfReviews: 4200,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 16",
+    description: "A18 chip, Apple Intelligence, Camera Control button and 48MP Fusion camera.",
+    price: 79900,
+    originalPrice: 89900,
+    discount: 11,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 90,
+    ratings: 4.9,
+    numOfReviews: 14520,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 16 Plus",
+    description: "Large 6.7-inch OLED display with A18 chip and all-day battery.",
+    price: 89900,
+    originalPrice: 99900,
+    discount: 10,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 65,
+    ratings: 4.9,
+    numOfReviews: 8120,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 16 Pro",
+    description: "A18 Pro chip, titanium body, Camera Control and 48MP Pro camera.",
+    price: 119900,
+    originalPrice: 129900,
+    discount: 8,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 45,
+    ratings: 4.9,
+    numOfReviews: 12450,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 16 Pro Max",
+    description: "6.9-inch Super Retina XDR display with A18 Pro chip and premium camera system.",
+    price: 144900,
+    originalPrice: 159900,
+    discount: 9,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 40,
+    ratings: 4.9,
+    numOfReviews: 18250,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 17",
+    description: "Next-generation iPhone with Apple Intelligence, A19 chip and advanced dual cameras.",
+    price: 89900,
+    originalPrice: 99900,
+    discount: 10,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 100,
+    ratings: 5.0,
+    numOfReviews: 3200,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 17 Air",
+    description: "Ultra-thin premium iPhone with lightweight titanium design and A19 chip.",
+    price: 99900,
+    originalPrice: 109900,
+    discount: 9,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 60,
+    ratings: 5.0,
+    numOfReviews: 2100,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 17 Pro",
+    description: "Professional flagship featuring A19 Pro chip, ProMotion display and triple-camera setup.",
+    price: 129900,
+    originalPrice: 139900,
+    discount: 7,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 50,
+    ratings: 5.0,
+    numOfReviews: 1800,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
+  {
+    name: "Apple iPhone 17 Pro Max",
+    description: "Ultimate flagship with A19 Pro chip, advanced periscope camera and premium titanium build.",
+    price: 154900,
+    originalPrice: 169900,
+    discount: 9,
+    brand: "Apple",
+    category: "Mobiles",
+    stock: 45,
+    ratings: 5.0,
+    numOfReviews: 1600,
+    imageUrl: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800"
+  },
+
 
   /* =========================
      🍳 KITCHEN
